@@ -43,7 +43,7 @@ body{
     height: 150px;
 }
 
-.tituloInicio{
+.titulosPrincipales{
     margin-top: 230px;
     margin-right: 40px;
     margin-bottom: 20px;
@@ -52,7 +52,7 @@ body{
     font-weight: normal;
 }
 
-.fotoInicio{
+.foto-principal{
     width: 1350px;
 }
 
@@ -68,49 +68,13 @@ body{
     box-shadow: inset -1px 3px 8px 5px #bcbcb9; 
 }
 
-.foto1{
+.fotosMasTocadas{
     width: 200px;
     height: 600px;
     margin-top: 40px;
     margin-right: 20px;
     margin-bottom: 30px;
     margin-left: 80px;
-}
-
-.foto2{
-    width: 200px;
-    height: 600px;
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-}
-
-.foto3{
-    width: 200px;
-    height: 600px;
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-}
-
-.foto4{
-    width: 200px;
-    height: 600px;
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-}
-
-.foto5{
-    width: 200px;
-    height: 600px;
-    margin-top: 40px;
-    margin-right: 80px;
-    margin-bottom: 30px;
-    margin-left: 20px;
 }
 
 .logoFooter{
@@ -122,109 +86,29 @@ body{
     font-size: 15px;
 }
 
-.tituloArtistas{
-    margin-top: 230px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    text-align: center;
+.boxArtistas h2{
+    font-size: 25px;
+    padding: 10px 10px;
+    font-weight: normal;}
+
+.boxArtistasFoto{
+    width: 350px;
+    padding: 10px 10px;
+}
+
+.boxArtistas p{
+    padding: 10px 10px;
     font-weight: normal;
 }
 
-.fotoArtistas{
-    width: 1350px;
+.boxArtistas a{
+    padding: 5px 10px;
+    font-weight: normal;
 }
 
-.henriqueJuliano{
+.boxArtistasIndividual{
     box-shadow: inset -1px 3px 8px 5px #bcbcb9;
     margin: 20px;
-}
-
-.henriqueJuliano h3{
-    font-size: 30px;
-    padding: 10px 10px;
-    font-weight: normal;
-}
-
-.fotoHenrJul{
-    width: 350px;
-    padding: 10px 10px;
-}
-
-.textHenJul{
-    padding: 10px 10px;
-    font-weight: normal;
-}
-
-.henriqueJuliano a{
-    padding: 5px 10px;
-    font-weight: normal;
-}
-
-.gusttavoLima{
-    box-shadow: inset -1px 3px 8px 5px #bcbcb9;
-    margin: 20px;
-}
-
-.gusttavoLima h3{
-    font-size: 30px;
-    padding: 10px 10px;
-    font-weight: normal;
-}
-
-.fotoGusttavoLima{
-    width: 350px;
-    padding: 10px 10px;
-}
-
-.textGusttavoLima{
-    padding: 10px 10px;
-    font-weight: normal;
-}
-
-.gusttavoLima a{
-    padding: 5px 10px;
-    font-weight: normal;
-    text-align: right;
-}
-
-.maiMar{
-    box-shadow: inset -1px 3px 8px 5px #bcbcb9;
-    margin: 20px
-}
-
-.maiMar h3{
-    font-size: 30px;
-    padding: 10px 10px;
-    font-weight: normal;
-}
-
-.fotoMaiMar{
-    width: 350px;
-    padding: 10px 10px;
-}
-
-.textMaiMar{
-    padding: 10px 10px;
-    font-weight: normal;
-}
-
-.maiMar a{
-    padding: 5px 10px;
-    font-weight: normal;
-}
-
-.tituloTop10{
-    margin-top: 230px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    text-align: center;
-    font-weight: normal;
-}
-
-.fotoTop10{
-    width: 1350px;
 }
 
 .canciones{
@@ -247,19 +131,6 @@ body{
     padding-left: 30px;
 }
 
-.tituloContacto{
-    margin-top: 230px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    text-align: center;
-    font-weight: normal;
-}
-
-.fotoContacto{
-    width: 1350px;
-}
-
 .formulario h2{
     text-align: center;
     padding-bottom:  20px;
@@ -279,27 +150,13 @@ body{
     font-weight: normal;
 }
 
-
-.tituloConoce{
-    margin-top: 230px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    text-align: center;
-    font-weight: normal;
-}
-
-.fotoConoce{
-    width: 1350px;
-}
-
 .raiz{
     width: 600px;
     box-shadow: inset -1px 3px 8px 5px #bcbcb9;
     margin: 30px 0px 30px 50px;   
 }
 
-.raiz h3{
+.historia h2{
     font-size: 20px ;
     padding: 20px 20px 10px 20px;
     font-weight: normal;
@@ -329,12 +186,6 @@ body{
     position: absolute;
     top: 0px;
     left: 700px;
-}
-
-.sofrencia h3{
-    font-size: 20px ;
-    padding: 20px 20px 10px 20px;
-    font-weight: normal;
 }
 
 .sofrenciaFoto{
