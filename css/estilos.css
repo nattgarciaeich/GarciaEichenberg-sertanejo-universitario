@@ -19,7 +19,8 @@ body{
     top: 0;
     z-index: 1000;
     background-color: #e0e1dd;
-    width: 1350px;
+    width:auto;
+    opacity: 0.6;
     text-align: center;
 }
 
@@ -49,14 +50,61 @@ body{
     margin-bottom: 20px;
     margin-left: 40px;
     text-align: center;
-    font-weight: normal;
+    font-size: 80px;
+    text-align: center;
+    color: #bcbcb9;
 }
 
-.foto-principal{
+.fotoPrincipalFondoInicio{
+    width: auto;
+    height: 900px;
+    background-image:url("../multimedia/portadaInicio2.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fotoPrincipalFondoArtistas{
+    width: auto;
+    height: 900px;
+    background-image:url("../multimedia/portadaTop10.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fotoPrincipalFondoTop10{
+    width: auto;
+    height: 900px;
+    background-image:url("../multimedia/portadaConoceMas.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fotoPrincipalFondoContacto{
+    width: auto;
+    height: 900px;
+    background-image:url("../multimedia/portadaInicio.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fotoPrincipalFondoConoce{
+    width:auto;
+    height: 900px;
+    background-image:url("../multimedia/portadaArtistas.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .foto-principal{
     width: 1350px;
 }
-
-.destacadosTitulo{
+ */
+/* .destacadosTitulo{
     text-align: center;
     margin: 30px;
     font-weight: normal;
@@ -65,8 +113,83 @@ body{
 .destacados{
     background-color:#e0e1dd ;
     overflow: auto;
+    box-shadow: inset -1px 3px 8px 5px #bcbcb9; */ 
+
+
+.destacadosGrid{
+    background-color:#e0e1dd ;
+    overflow: auto;
     box-shadow: inset -1px 3px 8px 5px #bcbcb9; 
+    display: grid; 
+    width: 1500px;
+    height: 700px ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1.5fr; 
+    gap: 10px 14px; 
+    grid-template-areas: 
+    "titulo titulo titulo titulo titulo"
+    "foto1 foto2 foto3 foto4 foto5"; 
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-evenly;
+    justify-content: space-around;
+
 }
+
+.destacadosTitulo{
+    grid-area: titulo;
+    text-align: center;
+    margin: 30px;
+    font-weight: normal;
+}
+
+.foto1 { 
+    grid-area: foto1; 
+    background-image: url("../multimedia/destacadoMaiara.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+
+}
+
+.foto2 { 
+    grid-area: foto2;
+    background-image: url("../multimedia/destacadoHenrJu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+    
+.foto3 { 
+    grid-area: foto3;
+    background-image: url("../multimedia/destacadoLuan.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    
+}
+
+.foto4 { 
+    grid-area: foto4;
+    background-image: url("../multimedia/destacadoMarilia.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+
+.foto5 { 
+    grid-area: foto5; 
+    background-image: url("../multimedia/destacadoHugGui.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+
 
 .fotosMasTocadas{
     width: 200px;
@@ -88,16 +211,16 @@ body{
 
 .boxArtistas h2{
     font-size: 25px;
-    padding: 10px 10px;
+    padding: 20px 20px;
     font-weight: normal;}
 
 .boxArtistasFoto{
     width: 350px;
-    padding: 10px 10px;
+    padding: 5px 20px;
 }
 
 .boxArtistas p{
-    padding: 10px 10px;
+    padding: 30px 30px;
     font-weight: normal;
 }
 
@@ -109,6 +232,14 @@ body{
 .boxArtistasIndividual{
     box-shadow: inset -1px 3px 8px 5px #bcbcb9;
     margin: 20px;
+}
+
+.boxFlex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .canciones{
@@ -218,7 +349,7 @@ body{
 }
 
 .referentesFoto{
-    width: 150px;
+    width: 250px;
     margin: 10px 20px;
 }
 
@@ -226,3 +357,8 @@ body{
     margin: 10px 20px;
     font-weight: normal;
 }
+
+.carrouselBox{
+    width: 500px;
+}
+
