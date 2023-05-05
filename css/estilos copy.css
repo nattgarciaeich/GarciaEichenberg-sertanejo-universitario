@@ -1,25 +1,28 @@
-*{
+/* DONDE VOY MARCANDO LO QUE YA PASE A SASS */
+
+/* *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
+} */
 
-html{
+/* html{
     font-size: 62.5;
-}
+} */
 
-body{
+/* body{
     background-color:  #e0e1dd ;
     font-family: 'Montserrat', sans-serif;
-} 
-
+}  */
+/* 
 .menu{
     list-style-type: square;
     position: fixed;
     top: 0;
     z-index: 1000;
-    background-color: rgba(224,225,221,.6);
+    background-color: #e0e1dd;
     width:auto; 
+    opacity: 0.6;
     text-align: center;
     width:100vw;
     height: 150px;
@@ -43,48 +46,16 @@ body{
 .logoMenu{
     width: 150px;
     height: 150px;
-} 
+}  */
 
-.fotoPrincipalFondoInicio{
-    position: relative;
-    background: #bfc4ca;
-    overflow: hidden;
+/* .titulosPrincipales{
     margin-top: 150px;
-    width: auto;
-    height: 900px;
-    }
-    
-
-.fotoPrincipalFondoInicio h1 {
-        font-family: 'Secular One', sans-serif;
-        padding: 300px 100px;
-        position: relative;
-        z-index: 2;
-        text-align: center;
-        font-size: 50px;
-        color: #111110b3;
-    }
-    
-.fotoPrincipalFondoInicio:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        opacity: 0.5;
-        background-image: url("../multimedia/portadaInicio2.jpg");
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: cover;
-    }
-/* 
-.titulosPrincipales{
-    margin: 150px 40px 20px 40px;
-    text-align: left;
-    font-size: 100px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 80px;
+    text-align: center;
     color: #bcbcb9;
 }
 
@@ -95,9 +66,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0;
-} */
-
+    opacity: 0.6;
+}
+/* 
 .fotoPrincipalFondoArtistas{
     width: auto;
     height: 900px;
@@ -105,7 +76,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
 }
 
 .fotoPrincipalFondoTop10{
@@ -115,7 +85,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
 }
 
 .fotoPrincipalFondoContacto{
@@ -125,7 +94,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
 }
 
 .fotoPrincipalFondoConoce{
@@ -135,7 +103,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
 }
 
 /* .foto-principal{
@@ -153,7 +120,6 @@ body{
     overflow: auto;
     box-shadow: inset -1px 3px 8px 5px #bcbcb9; */ 
 
-/* HASTA ACA PASADO A SASS */
 
 .destacadosGrid{
     background-color:#e0e1dd ;
@@ -229,17 +195,15 @@ body{
     margin: 10px;
 }
 
-/* hasta aca sass */
 
-
-/* .fotosMasTocadas{
+.fotosMasTocadas{
     width: 200px;
     height: 600px;
     margin-top: 40px;
     margin-right: 20px;
     margin-bottom: 30px;
     margin-left: 80px;
-} */
+}
 
 .logoFooter{
     width: 100px;
@@ -249,8 +213,6 @@ body{
 .newsletter{
     font-size: 15px;
 }
-
-/* hasta aca SASS */
 
 .boxArtistas h2{
     font-size: 25px;
@@ -285,8 +247,6 @@ body{
     padding: 10px;
 }
 
-/*  HASTA ACA SASS */
-
 .canciones{
     width: 1200px;
     height: 500px;
@@ -307,7 +267,6 @@ body{
     padding-left: 30px;
 }
 
-/* HASTA ACA SASS */
 .formulario h2{
     text-align: center;
     padding-bottom:  20px;
@@ -326,7 +285,7 @@ body{
     padding: 10px;
     font-weight: normal;
 }
- /* HASTA ACA SASS */
+
 .raiz{
     width: 600px;
     box-shadow: inset -1px 3px 8px 5px #bcbcb9;
@@ -413,4 +372,3 @@ body{
     align-items: center;
 }
 
-/* TODO EN SASS */
