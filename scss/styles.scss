@@ -5,6 +5,7 @@
 @import "contacto";
 @import "top10";
 @import "mixins";
+@import "responsive";
 
 
 *{
@@ -12,8 +13,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-
 
 html{
     font-size: 62.5;
