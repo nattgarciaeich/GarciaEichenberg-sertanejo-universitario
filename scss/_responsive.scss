@@ -2,13 +2,10 @@
 @media screen and (max-width: 500px){
     /* MENU */
     .menu{
-        list-style-type: square;
-        /* position: fixed;
-        top: 0;
-        z-index: 1000; */
-        width: 600px;
-        height: 80px;   
-        li{
+        width: 500px;
+        height: 80px;  
+    } 
+   /*      li{
             display: inline-block;
             padding: 5px 10px;
             .logoMenu{
@@ -21,13 +18,56 @@
             padding: 0;
             } 
         }
+     */
+    .logoResponsive{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+    }
+
+    .menuResponsive{
+        display: flex;
+        flex-direction: row;
+        h2{
+            font-family: $fuenteEspecial;
+            font-size: 20px;
+            margin: 30px 0 30px 10px;
+        }
+    }
+
+    #menu-checked:not(:checked) ~ li {
+        display: none;
+    }
+
+    #menu-checked:checked ~ li {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        color: black;
+        background-color: $colorFondoClaro;
+        font-size: 20px;
+        font-weight: bold;
+        border: 3px solid $colorBordesBox;
+        border-radius: 15px;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        margin: 10px;
+    }
+
+    #menu-cerrar{
+        display: none;
+    }
+
     /* INICIO */
     .fotoPrincipalFondoInicio{
-        margin-top: 150px;
+        margin-top: 80px;
         width: 500px;
         height: 500px;
         h1 {
-            padding: 200px 100px;
+            padding: 150px 100px;
             font-size: 30px;
         }
     }
@@ -62,11 +102,9 @@
 
     /* TOP 10 */
     .fotoPrincipalFondoTop10{
-        margin-top: 150px;
-        width: 500px;
-        height: 500px;
+        @include fotosPrincipales;
         h1 {
-            padding: 200px 100px;
+            padding: 150px 100px;
             font-size: 30px;
         }
     }
@@ -85,11 +123,9 @@
     }
     /* CONTACTO */
     .fotoPrincipalFondoContacto{
-        margin-top: 150px;
-        width: 500px;
-        height: 500px;
+        @include fotosPrincipales;
         h1 {
-            padding: 200px 100px;
+            padding: 150px 100px;
             font-size: 30px;
         }
     }
@@ -105,11 +141,9 @@
     }
     /* ARTISTAS */
     .fotoPrincipalFondoArtistas{
-        margin-top: 150px;
-        width: 500px;
-        height: 500px;
+        @include fotosPrincipales;
         h1 {
-            padding: 200px 100px;
+            padding: 150px 100px;
             font-size: 30px;
         }
     }
@@ -137,11 +171,9 @@
     }
     /* CONOCE MAS */
     .fotoPrincipalFondoConoce{
-        margin-top: 150px;
-        width: 500px;
-        height: 500px;
+        @include fotosPrincipales;
         h1 {
-            padding: 200px 100px;
+            padding: 150px 100px;
             font-size: 30px;
         }
     }
@@ -156,10 +188,7 @@
     .raiz{
         width: 450px;
         margin: 20px 40px 20px 40px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        @include flexWrap;
         h2{
             font-size: 20px ;
         }
@@ -176,10 +205,7 @@
     .sofrencia{
         width: 450px;
         margin: 20px 40px 20px 40px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        @include flexWrap;
         h2{
             font-size: 20px ;
         }

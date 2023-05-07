@@ -49,6 +49,22 @@ body {
   /* padding-bottom: 10px; */
 }
 
+.logoResponsive {
+  display: none;
+}
+
+.menuResponsive {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+#menu-check {
+  display: none;
+}
+
 /* FOOTER */
 .gridFooter {
   display: grid;
@@ -499,33 +515,67 @@ body {
 @media screen and (max-width: 500px) {
   /* MENU */
   .menu {
-    list-style-type: square;
-    /* position: fixed;
-    top: 0;
-    z-index: 1000; */
-    width: 600px;
+    width: 500px;
     height: 80px;
   }
-  .menu li {
+  /*      li{
+           display: inline-block;
+           padding: 5px 10px;
+           .logoMenu{
+               width: 100px;
+               height: 100px;
+           }
+       }
+           a{
+           font-size: 15px;
+           padding: 0;
+           } 
+       }
+    */
+  .logoResponsive {
     display: inline-block;
-    padding: 5px 10px;
+    width: 80px;
+    height: 80px;
   }
-  .menu li .logoMenu {
-    width: 100px;
-    height: 100px;
+  .menuResponsive {
+    display: flex;
+    flex-direction: row;
   }
-  .menu a {
-    font-size: 15px;
-    padding: 0;
+  .menuResponsive h2 {
+    font-family: "Secular One", sans-serif;
+    font-size: 20px;
+    margin: 30px 0 30px 10px;
+  }
+  #menu-checked:not(:checked) ~ li {
+    display: none;
+  }
+  #menu-checked:checked ~ li {
+    display: block;
+  }
+  #menu {
+    display: block;
+    color: black;
+    background-color: #d9ae94;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid #b58463;
+    border-radius: 15px;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    margin: 10px;
+  }
+  #menu-cerrar {
+    display: none;
   }
   /* INICIO */
   .fotoPrincipalFondoInicio {
-    margin-top: 150px;
+    margin-top: 80px;
     width: 500px;
     height: 500px;
   }
   .fotoPrincipalFondoInicio h1 {
-    padding: 200px 100px;
+    padding: 150px 100px;
     font-size: 30px;
   }
   .destacadosGrid {
@@ -551,12 +601,12 @@ body {
   }
   /* TOP 10 */
   .fotoPrincipalFondoTop10 {
-    margin-top: 150px;
+    margin-top: 80px;
     width: 500px;
     height: 500px;
   }
   .fotoPrincipalFondoTop10 h1 {
-    padding: 200px 100px;
+    padding: 150px 100px;
     font-size: 30px;
   }
   .canciones {
@@ -574,12 +624,12 @@ body {
   }
   /* CONTACTO */
   .fotoPrincipalFondoContacto {
-    margin-top: 150px;
+    margin-top: 80px;
     width: 500px;
     height: 500px;
   }
   .fotoPrincipalFondoContacto h1 {
-    padding: 200px 100px;
+    padding: 150px 100px;
     font-size: 30px;
   }
   .formulario {
@@ -594,12 +644,12 @@ body {
   }
   /* ARTISTAS */
   .fotoPrincipalFondoArtistas {
-    margin-top: 150px;
+    margin-top: 80px;
     width: 500px;
     height: 500px;
   }
   .fotoPrincipalFondoArtistas h1 {
-    padding: 200px 100px;
+    padding: 150px 100px;
     font-size: 30px;
   }
   .boxArtistasIndividual {
@@ -624,12 +674,12 @@ body {
   }
   /* CONOCE MAS */
   .fotoPrincipalFondoConoce {
-    margin-top: 150px;
+    margin-top: 80px;
     width: 500px;
     height: 500px;
   }
   .fotoPrincipalFondoConoce h1 {
-    padding: 200px 100px;
+    padding: 150px 100px;
     font-size: 30px;
   }
   .historiaGrid {

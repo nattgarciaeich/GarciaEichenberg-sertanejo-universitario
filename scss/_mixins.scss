@@ -5,3 +5,16 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin fotosPrincipales{
+    margin-top: 80px;
+    width: 500px;
+    height: 500px;
+}
+
+@mixin flexWrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
