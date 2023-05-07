@@ -5,6 +5,89 @@ $colorTextoBlack: black;
 $colorTitulosFoto: #1a1a19b3;
 $colorMenuNav: rgba(224,225,221,.6);
 $colorBordesBox: #bcbcb9; */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #d9ae94;
+}
+
+/* MENU */
+.menu {
+  list-style-type: square;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(224, 225, 221, 0.6);
+  text-align: center;
+  width: 100vw;
+  height: 150px;
+}
+.menu li {
+  display: inline-block;
+  padding: 10px 30px;
+}
+.menu li .logoMenu {
+  width: 150px;
+  height: 150px;
+}
+.menu li a {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  padding: 0px 20px;
+  /* padding-bottom: 10px; */
+}
+
+/* FOOTER */
+.gridFooter {
+  display: grid;
+  width: 100vw;
+  height: 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px 14px;
+  grid-template-areas: "logo nosotros redes news";
+  justify-content: space-around;
+  align-content: start;
+  justify-items: stretch;
+  align-items: start;
+}
+.gridFooter .divLogo {
+  grid-area: logo;
+  justify-self: center;
+  align-self: center;
+}
+.gridFooter .divLogo .logoFooter {
+  width: 130px;
+  height: 130px;
+}
+.gridFooter .nosotros {
+  grid-area: nosotros;
+  margin: 50px 30px 30px 30px;
+}
+.gridFooter .redes {
+  grid-area: redes;
+  margin: 50px 30px 30px 30px;
+}
+.gridFooter .news {
+  grid-area: news;
+  margin: 50px 30px 30px 30px;
+}
+.gridFooter .news .newsletter {
+  font-size: 15px;
+}
+
 .fotoPrincipalFondoInicio {
   position: relative;
   background: #d9ae94;
@@ -279,7 +362,7 @@ $colorBordesBox: #bcbcb9; */
   width: 500px;
 }
 .carrouselBox .referentesFoto {
-  width: 250px;
+  width: 350px;
   margin: 10px 20px;
 }
 .carrouselBox h2 {
@@ -412,11 +495,33 @@ $colorBordesBox: #bcbcb9; */
   padding-left: 40px;
 }
 
-/* TABLET */
-@media screen and (max-width: 768px) {
+/* MOBILE */
+@media screen and (max-width: 500px) {
+  /* MENU */
+  .menu {
+    list-style-type: square;
+    /* position: fixed;
+    top: 0;
+    z-index: 1000; */
+    width: 600px;
+    height: 80px;
+  }
+  .menu li {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+  .menu li .logoMenu {
+    width: 100px;
+    height: 100px;
+  }
+  .menu a {
+    font-size: 15px;
+    padding: 0;
+  }
+  /* INICIO */
   .fotoPrincipalFondoInicio {
     margin-top: 150px;
-    width: 850px;
+    width: 500px;
     height: 500px;
   }
   .fotoPrincipalFondoInicio h1 {
@@ -424,124 +529,191 @@ $colorBordesBox: #bcbcb9; */
     font-size: 30px;
   }
   .destacadosGrid {
-    margin: 40px 80px;
-    width: 700px;
+    margin: 40px 50px;
+    width: 400px;
+    height: 800px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "titulo" "foto1" "foto2" "foto3" "foto4" "foto5";
+  }
+  .destacadosTitulo {
+    margin: 15px 0 10px 0;
+    padding-top: 10px;
+  }
+  .destacadosTitulo h2 {
+    font-size: 20px;
+  }
+  .foto1, .foto2, .foto3, .foto4, .foto5 {
+    margin: 5px 10px 5px 10px;
+  }
+  .foto5 {
+    margin-bottom: 10px;
+  }
+  /* TOP 10 */
+  .fotoPrincipalFondoTop10 {
+    margin-top: 150px;
+    width: 500px;
     height: 500px;
   }
-  .menu {
-    list-style-type: square;
-    /* position: fixed;
-    top: 0;
-    z-index: 1000; */
-    width: 850px;
-    height: 80px;
+  .fotoPrincipalFondoTop10 h1 {
+    padding: 200px 100px;
+    font-size: 30px;
   }
-  .menu li {
-    display: inline-block;
-    padding: 10px 15px;
+  .canciones {
+    width: 400px;
+    height: 500px;
+    margin: 50px 60px;
   }
-  .menu li .logoMenu {
-    width: 80px;
-    height: 80px;
+  .canciones h2 {
+    padding: 20px;
+    font-size: 20px;
   }
-  .menu a {
-    font-size: 10px;
+  .canciones .listaSpotify {
+    padding-right: 20px;
+    padding-left: 20px;
   }
-}
-@media screen and (max-width: 500px) {
-  .gridFooter {
+  /* CONTACTO */
+  .fotoPrincipalFondoContacto {
+    margin-top: 150px;
+    width: 500px;
+    height: 500px;
+  }
+  .fotoPrincipalFondoContacto h1 {
+    padding: 200px 100px;
+    font-size: 30px;
+  }
+  .formulario {
     font-size: 15px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 0.3fr;
-    gap: 10px 14px;
+    width: 400px;
+    margin: 30px 50px 30px 50px;
+    padding: 30px;
+  }
+  .formulario h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  /* ARTISTAS */
+  .fotoPrincipalFondoArtistas {
+    margin-top: 150px;
+    width: 500px;
+    height: 500px;
+  }
+  .fotoPrincipalFondoArtistas h1 {
+    padding: 200px 100px;
+    font-size: 30px;
+  }
+  .boxArtistasIndividual {
+    width: 450px;
+    margin: 30px;
+  }
+  .boxFlex {
+    flex-flow: wrap;
+    padding: 10px;
+  }
+  .boxArtistas h2 {
+    font-size: 15px;
+    padding: 10px 10px 0px 15px;
+  }
+  .boxArtistas .boxArtistasFoto {
+    width: 300px;
+    height: 250px;
+    padding: 5px 10px;
+  }
+  .boxArtistas p {
+    padding: 10px 10px;
+  }
+  /* CONOCE MAS */
+  .fotoPrincipalFondoConoce {
+    margin-top: 150px;
+    width: 500px;
+    height: 500px;
+  }
+  .fotoPrincipalFondoConoce h1 {
+    padding: 200px 100px;
+    font-size: 30px;
+  }
+  .historiaGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.5fr;
+    grid-template-areas: "raiz" "sofrencia" "referentes";
+  }
+  .raiz {
+    width: 450px;
+    margin: 20px 40px 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .raiz h2 {
+    font-size: 20px;
+  }
+  .raiz p {
+    width: 400px;
+  }
+  .raiz .raizVideo {
+    width: 400px;
+  }
+  .raiz .raizFoto {
+    width: 400px;
+  }
+  .sofrencia {
+    width: 450px;
+    margin: 20px 40px 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .sofrencia h2 {
+    font-size: 20px;
+  }
+  .sofrencia p {
+    width: 400px;
+  }
+  .sofrencia .sofrenciaVideo {
+    width: 400px;
+    padding: 10px 20px 20px 20px;
+  }
+  .sofrencia .sofrenciaFoto {
+    width: 400px;
+    padding-bottom: 20px;
+  }
+  .carrouselBox {
+    width: 400px;
+  }
+  .carrouselBox .referentesFoto {
+    width: 250px;
+    margin: 10px 20px;
+  }
+  .carrouselBox h2 {
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+  }
+  /* FOOTER */
+  .gridFooter {
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    /*       gap: 10px 14px; */
     grid-template-areas: "logo nosotros" "logo redes" "logo news";
+    margin-left: 30px;
   }
   .gridFooter .divLogo .logoFooter {
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
   }
-}
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #d9ae94;
-}
-
-/* MENU */
-.menu {
-  list-style-type: square;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  background-color: rgba(224, 225, 221, 0.6);
-  text-align: center;
-  width: 100vw;
-  height: 150px;
-}
-.menu li {
-  display: inline-block;
-  padding: 10px 30px;
-}
-.menu li .logoMenu {
-  width: 150px;
-  height: 150px;
-}
-.menu li a {
-  color: black;
-  font-weight: normal;
-  text-decoration: none;
-  font-size: 30px;
-  display: block;
-  padding: 0px 20px;
-  /* padding-bottom: 10px; */
-}
-
-/* FOOTER */
-.gridFooter {
-  display: grid;
-  width: 100vw;
-  height: 200px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 10px 14px;
-  grid-template-areas: "logo nosotros redes news";
-  justify-content: space-around;
-  align-content: start;
-  justify-items: stretch;
-  align-items: start;
-}
-.gridFooter .divLogo {
-  grid-area: logo;
-  justify-self: center;
-  align-self: center;
-}
-.gridFooter .divLogo .logoFooter {
-  width: 130px;
-  height: 130px;
-}
-.gridFooter .nosotros {
-  grid-area: nosotros;
-  margin: 50px 30px 30px 30px;
-}
-.gridFooter .redes {
-  grid-area: redes;
-  margin: 50px 30px 30px 30px;
-}
-.gridFooter .news {
-  grid-area: news;
-  margin: 50px 30px 30px 30px;
-}
-.gridFooter .news .newsletter {
-  font-size: 15px;
+  .gridFooter h5 {
+    font-size: 15px;
+  }
+  .gridFooter .nosotros {
+    margin: 5px;
+  }
+  .gridFooter .redes {
+    margin: 5px;
+  }
+  .gridFooter .news {
+    margin: 5px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

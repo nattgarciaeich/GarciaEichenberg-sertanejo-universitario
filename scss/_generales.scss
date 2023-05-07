@@ -1,0 +1,88 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5;
+}
+
+body{
+    font-family: $fuentePrincipal;
+    background-color: $colorFondoClaro;
+}
+
+/* MENU */
+.menu{
+    list-style-type: square;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: $colorMenuNav;
+    text-align: center;
+    width: 100vw;
+    height: 150px;   
+    li{
+        display: inline-block;
+        padding: 10px 30px;
+        .logoMenu{
+            width: 150px;
+            height: 150px;
+        }
+        a{
+        color: $colorTextoBlack;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 30px;
+        display:block;
+        padding: 0px 20px;
+        /* padding-bottom: 10px; */
+        } 
+    }
+}
+
+
+/* FOOTER */
+.gridFooter{
+    display: grid; 
+    width: 100vw;
+    height: 200px ;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 10px 14px; 
+    grid-template-areas: 
+    "logo nosotros redes news"; 
+    justify-content: space-around;
+    align-content: start;
+    justify-items: stretch;
+    align-items: start;
+    
+    .divLogo{
+        grid-area: logo;
+        justify-self: center;
+        align-self: center;
+        .logoFooter{
+            width: 130px;
+            height: 130px;
+        }
+    }
+    .nosotros{
+        grid-area: nosotros;
+        margin: 50px 30px 30px 30px;
+    }
+    .redes{
+        grid-area: redes;
+        margin: 50px 30px 30px 30px;
+    }
+    .news{
+        grid-area: news;
+        margin: 50px 30px 30px 30px;
+        .newsletter{
+            font-size: 15px;
+        }
+    }
+
+}
+
