@@ -19,6 +19,10 @@
             } 
         }
      */
+    header div.contenedor ul{
+        display: none;
+    }
+
     .logoResponsive{
         display: inline-block;
         width: 80px;
@@ -35,16 +39,17 @@
         }
     }
 
-    #menu-checked:not(:checked) ~ li {
+    #menu-checked:not(:checked) ~ nav {
         display: none;
     }
 
-    #menu-checked:checked ~ li {
+    #menu-checked:checked ~ nav {
         display: block;
     }
 
     #menu {
         display: block;
+        width: 50px;
         color: black;
         background-color: $colorFondoClaro;
         font-size: 20px;
@@ -55,12 +60,23 @@
         right: 0.5em;
         top: 0.5em;
         margin: 10px;
+        &:hover{
+            background-color: $colorBordesBox;
+            color: wheat;
+        }
     }
 
     #menu-cerrar{
         display: none;
     }
+    
+    #menu-check:checked ~label #menu-abrir{
+        display: none;
+    }
 
+    #menu-check:checked ~label #menu-cerrar{
+        display: block;
+    }
     /* INICIO */
     .fotoPrincipalFondoInicio{
         margin-top: 80px;
@@ -233,7 +249,8 @@
         }
     }
     /* FOOTER */
-    .gridFooter{       
+    .gridFooter{   
+        width: 100%;    
         grid-template-columns: 0.5fr 0.5fr; 
         grid-template-rows: 0.1fr 0.1fr 0.1fr; 
   /*       gap: 10px 14px; */ 
@@ -241,7 +258,7 @@
         "logo nosotros"
         "logo redes"
         "logo news";
-        margin-left: 30px;     
+        margin-left: 0;     
         .divLogo{
             .logoFooter{
                 width: 150px;
