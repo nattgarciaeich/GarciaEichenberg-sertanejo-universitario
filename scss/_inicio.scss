@@ -32,9 +32,9 @@
 }
 
 .destacadosGrid{
-    background-color: $colorFondoClaro ;
+    background-color: $colorFondoPscuro ;
     overflow: auto;
-    box-shadow: inset -1px 3px 8px 5px $colorBordesBox; 
+    box-shadow: inset -1px 3px 8px 5px $colorFondoPscuro; 
     border-radius: 15px;
     margin: 40px 100px;
     display: grid; 

@@ -33,8 +33,9 @@
 
 .formulario{
     width: 600px;
-    box-shadow: inset -1px 3px 8px 5px $colorBordesBox;
+    box-shadow: inset -1px 3px 8px 5px $colorFondoPscuro;
     border-radius: 20px;
+    background-color: $colorFondoPscuro;
     margin: 50px 450px 50px 450px;
     padding: 30px;
     font-weight: normal;

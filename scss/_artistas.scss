@@ -32,10 +32,10 @@
 }
 
 .boxArtistasIndividual{
-    box-shadow: inset -1px 3px 8px 5px $colorBordesBox;
+    box-shadow: inset -1px 3px 8px 5px $colorFondoPscuro;
     margin: 20px;
     border-radius: 20px;
-    background-color: $colorFondoMedio;
+    background-color: $colorFondoPscuro;
 }
 
 
@@ -72,7 +72,7 @@
     height: 50px;
     border-radius: 20px;
     color:black;
-    background-color: $colorFondoPscuro;
+    background-color: $colorFondoMedio;
     text-align: right;
     }
 }
