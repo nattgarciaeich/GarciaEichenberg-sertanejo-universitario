@@ -31,21 +31,33 @@
     }
 }
 
-.canciones{
-    width: 1200px;
-    height: 500px;
-    background-color:$colorFondoMedio;
-    overflow: auto;
-    box-shadow: inset -1px 3px 8px 5px $colorBordesBox;
-    border-radius: 20px;
-    margin: 50px 150px;
-    h2{
-    text-align: center;
-    padding: 30px;
-    font-weight: normal;
-    }
-    .listaSpotify{
-    padding-right: 40px;
-    padding-left: 40px;
+.cancionesGrid{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "spotify";
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    .canciones{
+        grid-area: spotify;
+        width: 80%;
+        height: 600px;
+        background-color:$colorFondoMedio;
+        overflow: auto;
+        box-shadow: inset -1px 3px 8px 5px $colorBordesBox;
+        border-radius: 20px;
+        margin: 50px 0px;
+        h2{
+            text-align: center;
+            padding: 30px;
+            font-weight: normal;
+        }
+        .listaSpotify{
+            height: 450px;
+            padding-right: 40px;
+            padding-left: 40px;
+        }
     }
 }

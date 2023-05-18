@@ -18,28 +18,30 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-image: url(../multimedia/1.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 /* MENU */
-.menu {
+header nav {
   list-style-type: square;
   position: fixed;
   top: 0;
   z-index: 1000;
   background-color: rgba(224, 225, 221, 0.6);
   text-align: center;
-  width: 100vw;
+  width: 99vw;
   height: 150px;
 }
-.menu li {
+header nav li {
   display: inline-block;
   padding: 10px 30px;
 }
-.menu li .logoMenu {
+header nav li .logoMenu {
   width: 150px;
   height: 150px;
 }
-.menu li a {
+header nav li a {
   color: black;
   font-weight: normal;
   text-decoration: none;
@@ -49,26 +51,10 @@ body {
   /* padding-bottom: 10px; */
 }
 
-.logoResponsive {
-  display: none;
-}
-
-.menuResponsive {
-  display: none;
-}
-
-#menu {
-  display: none;
-}
-
-#menu-check {
-  display: none;
-}
-
 /* FOOTER */
 .gridFooter {
   display: grid;
-  width: 100vw;
+  width: 98vw;
   height: 200px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -138,17 +124,13 @@ body {
 }
 
 .destacadosGrid {
-  background-color: #b78b69;
   overflow: auto;
-  box-shadow: inset -1px 3px 8px 5px #b78b69;
-  border-radius: 15px;
-  margin: 40px 100px;
+  margin: 40px 80px;
   display: grid;
-  width: 1300px;
-  height: 700px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100wv;
+  height: 800px;
+  grid-template-columns: 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr;
   grid-template-rows: 0.3fr 1.5fr;
-  gap: 10px 14px;
   grid-template-areas: "titulo titulo titulo titulo titulo" "foto1 foto2 foto3 foto4 foto5";
   justify-content: space-evenly;
   align-content: stretch;
@@ -170,32 +152,32 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 10px 30px 25px;
+  margin: 0 15px 30px 15px;
   border-radius: 15px;
+  opacity: 0.5;
+}
+.foto1:hover, .foto5:hover, .foto4:hover, .foto3:hover, .foto2:hover {
+  opacity: 1;
 }
 
 .foto2 {
   grid-area: foto2;
   background-image: url("../multimedia/destacadoHenrJu.jpg");
-  margin: 0 10px 30px 10px;
 }
 
 .foto3 {
   grid-area: foto3;
   background-image: url("../multimedia/destacadoLuan.jpg");
-  margin: 0 10px 30px 10px;
 }
 
 .foto4 {
   grid-area: foto4;
   background-image: url("../multimedia/destacadoMarilia.jpg");
-  margin: 0 10px 30px 10px;
 }
 
 .foto5 {
   grid-area: foto5;
   background-image: url("../multimedia/destacadoHugGui.jpg");
-  margin: 0 25px 30px 10px;
 }
 
 .fotoPrincipalFondoArtistas {
@@ -233,7 +215,7 @@ body {
 
 .boxArtistasIndividual {
   box-shadow: inset -1px 3px 8px 5px #b78b69;
-  margin: 20px;
+  margin: 40px 30px;
   border-radius: 20px;
   background-color: #b78b69;
 }
@@ -244,6 +226,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
+}
+
+.derecho {
+  text-align: right;
+  margin-right: 20px;
 }
 
 .boxArtistas h2 {
@@ -306,11 +293,9 @@ body {
 
 .historiaGrid {
   display: grid;
-  /*    width: 1300px; */
-  /*   height: auto ; */
+  width: 100wv;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.6fr;
-  /* gap: ; */
   grid-template-areas: "raiz sofrencia" "referentes referentes";
   justify-content: space-evenly;
   align-content: stretch;
@@ -323,7 +308,7 @@ body {
   width: 600px;
   box-shadow: inset -1px 3px 8px 5px #b78b69;
   background-color: #b78b69;
-  margin: 30px 0px 30px 50px;
+  margin: 50px 0px;
   border-radius: 20px;
 }
 .raiz h2 {
@@ -351,7 +336,7 @@ body {
   width: 600px;
   background-color: #b78b69;
   box-shadow: inset -1px 3px 8px 5px #b78b69;
-  margin: 30px 0px 30px 50px;
+  margin: 50px 0px;
   border-radius: 20px;
 }
 .sofrencia h2 {
@@ -435,33 +420,42 @@ body {
   background-size: cover;
 }
 
-.formulario {
+.formularioGrid {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "form";
+  width: 100wv;
+  justify-items: center;
+  align-items: center;
+}
+.formularioGrid .formulario {
+  grid-area: form;
   width: 600px;
   box-shadow: inset -1px 3px 8px 5px #b78b69;
   border-radius: 20px;
   background-color: #b78b69;
-  margin: 50px 450px 50px 450px;
+  margin: 50px 0px;
   padding: 30px;
   font-weight: normal;
 }
-.formulario h2 {
+.formularioGrid .formulario h2 {
   text-align: center;
   padding-bottom: 20px;
   font-weight: normal;
 }
-.formulario div {
+.formularioGrid .formulario div {
   padding: 10px;
   font-weight: normal;
 }
-
-.botonJS, .botonEnviar, .botonBorrar {
+.formularioGrid .botonJS, .formularioGrid .botonEnviar, .formularioGrid .botonBorrar {
   background-color: #b58463;
   border-radius: 30px;
 }
-.botonJS:hover, .botonEnviar:hover, .botonBorrar:hover {
+.formularioGrid .botonJS:hover, .formularioGrid .botonEnviar:hover, .formularioGrid .botonBorrar:hover {
   background-color: #d9ae94;
 }
-
 .fotoPrincipalFondoTop10 {
   position: relative;
   background: #d9ae94;
@@ -495,21 +489,32 @@ body {
   background-size: cover;
 }
 
-.canciones {
-  width: 1200px;
-  height: 500px;
+.cancionesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "spotify";
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+.cancionesGrid .canciones {
+  grid-area: spotify;
+  width: 80%;
+  height: 600px;
   background-color: #b58463;
   overflow: auto;
   box-shadow: inset -1px 3px 8px 5px #b58463;
   border-radius: 20px;
-  margin: 50px 150px;
+  margin: 50px 0px;
 }
-.canciones h2 {
+.cancionesGrid .canciones h2 {
   text-align: center;
   padding: 30px;
   font-weight: normal;
 }
-.canciones .listaSpotify {
+.cancionesGrid .canciones .listaSpotify {
+  height: 450px;
   padding-right: 40px;
   padding-left: 40px;
 }
@@ -517,77 +522,33 @@ body {
 /* MOBILE */
 @media screen and (max-width: 500px) {
   /* MENU */
-  .menu {
-    width: 500px;
-    height: 80px;
+  header nav {
+    width: 100%;
+    height: 85px;
   }
-  /*      li{
-           display: inline-block;
-           padding: 5px 10px;
-           .logoMenu{
-               width: 100px;
-               height: 100px;
-           }
-       }
-           a{
-           font-size: 15px;
-           padding: 0;
-           } 
-       }
-    */
-  header div.contenedor ul {
-    display: none;
-  }
-  .logoResponsive {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-  }
-  .menuResponsive {
+  header nav ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
   }
-  .menuResponsive h2 {
-    font-family: "Secular One", sans-serif;
-    font-size: 20px;
-    margin: 30px 0 30px 10px;
+  header nav ul li {
+    padding: 0;
   }
-  #menu-checked:not(:checked) ~ nav {
-    display: none;
+  header nav ul li .logoMenu {
+    width: 90px;
+    height: 90px;
+    padding: 0;
   }
-  #menu-checked:checked ~ nav {
-    display: block;
-  }
-  #menu {
-    display: block;
-    width: 50px;
-    color: black;
-    background-color: #d9ae94;
-    font-size: 20px;
-    font-weight: bold;
-    border: 3px solid #b58463;
-    border-radius: 15px;
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-    margin: 10px;
-  }
-  #menu:hover {
-    background-color: #b58463;
-    color: wheat;
-  }
-  #menu-cerrar {
-    display: none;
-  }
-  #menu-check:checked ~ label #menu-abrir {
-    display: none;
-  }
-  #menu-check:checked ~ label #menu-cerrar {
-    display: block;
+  header nav ul li a {
+    font-size: 15px;
+    padding: 0px 0px;
+    /* padding-bottom: 10px; */
   }
   /* INICIO */
   .fotoPrincipalFondoInicio {
-    margin-top: 80px;
+    margin-top: 85px;
     width: 500px;
     height: 500px;
   }
@@ -618,7 +579,7 @@ body {
   }
   /* TOP 10 */
   .fotoPrincipalFondoTop10 {
-    margin-top: 80px;
+    margin-top: 85px;
     width: 500px;
     height: 500px;
   }
@@ -627,21 +588,20 @@ body {
     font-size: 30px;
   }
   .canciones {
-    width: 400px;
     height: 500px;
-    margin: 50px 60px;
   }
   .canciones h2 {
     padding: 20px;
     font-size: 20px;
   }
   .canciones .listaSpotify {
+    height: 350px;
     padding-right: 20px;
     padding-left: 20px;
   }
   /* CONTACTO */
   .fotoPrincipalFondoContacto {
-    margin-top: 80px;
+    margin-top: 85px;
     width: 500px;
     height: 500px;
   }
@@ -649,19 +609,19 @@ body {
     padding: 150px 100px;
     font-size: 30px;
   }
-  .formulario {
+  .formularioGrid .formulario {
     font-size: 15px;
     width: 400px;
-    margin: 30px 50px 30px 50px;
+    margin: 30px 0px;
     padding: 30px;
   }
-  .formulario h2 {
-    font-size: 20px;
+  .formularioGrid .formulario h2 {
+    font-size: 15widpx;
     padding-bottom: 20px;
   }
   /* ARTISTAS */
   .fotoPrincipalFondoArtistas {
-    margin-top: 80px;
+    margin-top: 85px;
     width: 500px;
     height: 500px;
   }
@@ -691,7 +651,7 @@ body {
   }
   /* CONOCE MAS */
   .fotoPrincipalFondoConoce {
-    margin-top: 80px;
+    margin-top: 85px;
     width: 500px;
     height: 500px;
   }
@@ -766,9 +726,8 @@ body {
     grid-template-areas: "logo nosotros" "logo redes" "logo news";
     margin-left: 0;
   }
-  .gridFooter .divLogo .logoFooter {
-    width: 150px;
-    height: 150px;
+  .gridFooter .divLogo {
+    align-self: start;
   }
   .gridFooter h5 {
     font-size: 15px;

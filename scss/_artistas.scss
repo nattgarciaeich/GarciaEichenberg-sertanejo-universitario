@@ -33,9 +33,10 @@
 
 .boxArtistasIndividual{
     box-shadow: inset -1px 3px 8px 5px $colorFondoPscuro;
-    margin: 20px;
+    margin: 40px 30px;
     border-radius: 20px;
     background-color: $colorFondoPscuro;
+    
 }
 
 
@@ -45,6 +46,11 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+
+.derecho{
+    text-align: right;
+    margin-right: 20px;
 }
 
 .boxArtistas{

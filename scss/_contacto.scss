@@ -31,39 +31,51 @@
     }
 }
 
-.formulario{
-    width: 600px;
-    box-shadow: inset -1px 3px 8px 5px $colorFondoPscuro;
-    border-radius: 20px;
-    background-color: $colorFondoPscuro;
-    margin: 50px 450px 50px 450px;
-    padding: 30px;
-    font-weight: normal;
-    h2{
-    text-align: center;
-    padding-bottom:  20px;
-    font-weight: normal;
-    }
-    div{
-        padding: 10px;
+.formularioGrid{
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "form";
+    width: 100wv;
+    justify-items: center;
+    align-items: center;
+    .formulario{
+        grid-area: form;
+        width: 600px;
+        box-shadow: inset -1px 3px 8px 5px $colorFondoPscuro;
+        border-radius: 20px;
+        background-color: $colorFondoPscuro;
+        margin: 50px 0px;
+        padding: 30px;
         font-weight: normal;
+        h2{
+        text-align: center;
+        padding-bottom:  20px;
+        font-weight: normal;
+        }
+        div{
+            padding: 10px;
+            font-weight: normal;
+        }
+
     }
 
-}
+    .botonJS{
+        background-color: $colorFondoMedio;
+        border-radius: 30px;
+        &:hover{
+            background-color: $colorFondoClaro;
+        }
 
-.botonJS{
-    background-color: $colorFondoMedio;
-    border-radius: 30px;
-    &:hover{
-        background-color: $colorFondoClaro;
     }
 
-}
+    .botonBorrar{
+        @extend .botonJS;
+    }
 
-.botonBorrar{
-    @extend .botonJS;
-}
-
-.botonEnviar{
-    @extend .botonJS;
+    .botonEnviar{
+        @extend .botonJS;
+    }
 }

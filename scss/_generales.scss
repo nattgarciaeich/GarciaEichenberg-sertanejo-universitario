@@ -12,57 +12,45 @@ html{
 body{
     font-family: $fuentePrincipal;
     background-image: url(../multimedia/1.jpg);
+    background-position:center ;
+    background-size: cover;
 }
 
 /* MENU */
-.menu{
+header{
+    nav{
     list-style-type: square;
     position: fixed;
     top: 0;
     z-index: 1000;
     background-color: $colorMenuNav;
     text-align: center;
-    width: 100vw;
+    width: 99vw;
     height: 150px;   
-    li{
-        display: inline-block;
-        padding: 10px 30px;
-        .logoMenu{
-            width: 150px;
-            height: 150px;
+        li{
+            display: inline-block;
+            padding: 10px 30px;
+            .logoMenu{
+                width: 150px;
+                height: 150px;
+            }
+            a{
+            color: $colorTextoBlack;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 30px;
+            display:block;
+            padding: 0px 20px;
+            /* padding-bottom: 10px; */
+            } 
         }
-        a{
-        color: $colorTextoBlack;
-        font-weight: normal;
-        text-decoration: none;
-        font-size: 30px;
-        display:block;
-        padding: 0px 20px;
-        /* padding-bottom: 10px; */
-        } 
     }
-}
-
-.logoResponsive{
-    display: none;
-}
-
-.menuResponsive{
-    display:none;
-}
-
-#menu{
-    display: none;   
-}
-
-#menu-check{
-    display: none;
 }
 
 /* FOOTER */
 .gridFooter{
     display: grid; 
-    width: 100vw;
+    width: 98vw;
     height: 200px ;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr; 

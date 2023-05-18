@@ -7,13 +7,21 @@
    
     <title>Conocé más</title>
 
+    <meta name="description" content="Historia del Sertanejo Universitario en español. Sertanejo Raiz y Sofrencia">
+    <meta name="keywords" content="MUSICA,SERTANEJO,UNIVERSITARIO,CANTANTES,BRASIL,SOFRENCIA,RAIZ,HISTORIA">
+
     <link rel="shortcut icon" href="../multimedia/sombrero.png" type="image/x-icon">
     
+    <!-- BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-
+   
+    <!-- FUENTE GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,900;1,200&&family=Secular+One&display=swap" rel="stylesheet">
@@ -52,7 +60,7 @@
     </main>
 
     <div class="historiaGrid">
-        <section class="raiz">
+        <section class="raiz" data-aos="zoom-out-right">
               <h2>Inícios: Sertanejo Raíz</h2>
               <div>
                 <img src="../multimedia/sertanejoRaiz.jpg" alt="Sertanejo Raiz" class="raizFoto">
@@ -64,7 +72,7 @@
               </div>
           </section>
 
-          <section class="sofrencia">
+          <section class="sofrencia" data-aos="zoom-out-left">
               <h2>Cambios: Sertanejo Sofrencia</h2>
               <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/wm2iBcrCSzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="sofrenciaVideo"></iframe>
@@ -156,6 +164,16 @@
           </form>
         </div>
     </footer>
-    
+
+    <!-- JS BOOSTRAP -->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 </html>

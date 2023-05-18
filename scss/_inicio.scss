@@ -32,17 +32,14 @@
 }
 
 .destacadosGrid{
-    background-color: $colorFondoPscuro ;
+   
     overflow: auto;
-    box-shadow: inset -1px 3px 8px 5px $colorFondoPscuro; 
-    border-radius: 15px;
-    margin: 40px 100px;
+    margin: 40px 80px;
     display: grid; 
-    width: 1300px;
-    height: 700px ;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    width: 100wv;
+    height: 800px ;
+    grid-template-columns: 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr; 
     grid-template-rows: 0.3fr 1.5fr; 
-    gap: 10px 14px; 
     grid-template-areas: 
     "titulo titulo titulo titulo titulo"
     "foto1 foto2 foto3 foto4 foto5"; 
@@ -67,36 +64,37 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 10px 30px 25px;
+    margin: 0 15px 30px 15px;
     border-radius: 15px;
+    opacity: 0.5;
+    &:hover{
+        opacity: 1;
+
+    }
 }
 
 .foto2{
     @extend .foto1;
     grid-area: foto2;
     background-image: url("../multimedia/destacadoHenrJu.jpg");
-    margin: 0 10px 30px 10px;
 }
 
 .foto3{
     @extend .foto1;
     grid-area: foto3;
     background-image: url("../multimedia/destacadoLuan.jpg");
-    margin: 0 10px 30px 10px;
 }
 
 .foto4{
     @extend .foto1;
     grid-area: foto4;
     background-image: url("../multimedia/destacadoMarilia.jpg");
-    margin: 0 10px 30px 10px;
 }
 
 .foto5{
     @extend .foto1;
     grid-area: foto5;
     background-image: url("../multimedia/destacadoHugGui.jpg");
-    margin: 0 25px 30px 10px;
 }
 
 
